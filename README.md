@@ -1,21 +1,21 @@
 #  Hackintosh
-This repository contains OpenCore EFI Files for Prime ASUS Z490M Plus motherboard.
+This repository contains OpenCore EFI files for the ASUS Prime Z490M-Plus motherboard.
 
-I will be updating the repo as i upgrade to latest versions of macOS. Consider whatever on the `main` branch is basically I'm using currently. You can find version tags as well.
+I will update this repository as I upgrade to the latest versions of macOS. Anything on the 'main' branch is what I'm currently using. You can also find version tags.
 
-I hope this repository will help others who are looking to build a Hackintosh which are using the same hardware & software configuration.
+I hope this repository will help others who are looking to build a Hackintosh with the same hardware and software configuration.
 
-If you want to build one for you, I highly recomend going through the [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/) itself. You will have to go through the instruction multiple times. I spent a lot of time figuring out the errors I made at various points. I will share those to help others so they don't make the same and hopefully saves a lot of time and frustration.
+If you want to build a Hackintosh for yourself, I highly recommend going through the [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/) itself. You will have to go through the instructions multiple times. I spent a lot of time figuring out the errors I made at various points, and I can share those to help others so they don't make the same mistakes and hopefully save a lot of time and frustration.
 
 # ⚙️ Configuration
-Im only adding details relevant to the setup here. You can reach out to me if you want to know more about my setup.
+"I'm only adding details relevant to the setup here, but feel free to reach out to me if you want to know more about my setup.
 
 ## Hardware
 | # | Component | Details |
 | - | - | - |
-| 1 | Motherboard | Asus Prime Z490M-Plus LGA 1200 |
+| 1 | Motherboard | ASUS Prime Z490M-Plus LGA 1200 |
 | 2 | CPU | Intel i7 10th Generation (10700) |
-| 3 | Storage (OS) | Adata XPG SX8200 Pro 256GB NVME SSD |
+| 3 | Storage (OS) | ADATA XPG SX8200 Pro 256GB NVME SSD |
 | 4 | Storage (Backup) | Seagate Barracuda 2 TB Internal HDD |
 | 5 | Monitor | LG 29" Ultrawide - 29UM69 |
 | 6 | Network | Ethernet, Android USB Tethering |
@@ -26,17 +26,12 @@ Im only adding details relevant to the setup here. You can reach out to me if yo
 | 1 | OS Version | macOS Ventura 13.3.1 (22E261) |
 | 1 | SMBIOS | iMac 20,1 |
 
-## BIOS Settings
-| # | Name | Value |
-| - | - | - |
-| 1 | Fastboot | `Disable` |
-
 ## Drivers
 | # | Name | Details |
 | - | - | - |
 | 1 | AudioDxe.efi | Audio |
 | 2 | HfsPlus.efi | HFS Volumes (macOS Installers & Recovery) |
-| 3 | OpenCanopy.efi | GUI for boot menu |
+| 3 | OpenCanopy.efi | GUI for boot menu. |
 | 4 | OpenRuntime.efi | - |
 | 5 | ResetNvramEntry.efi | - |
 
@@ -47,7 +42,7 @@ Im only adding details relevant to the setup here. You can reach out to me if yo
 | 2 | AppleALC.kext | Audio |
 | 3 | IntelMausi.kext | Ethernet |
 | 4 | HoRNDIS.kext | Android USB Tethering |
-| 5 | USBMap.kext | Mapped all 8 USB ports |
+| 5 | USBMap.kext | Mapped all 8 USB ports. |
 | 6 | XHCI-unsupported.kext | - |
 | 7 | Lilu.kext | - |
 | 8 | NVMeFix.kext | - |
@@ -65,7 +60,7 @@ Im only adding details relevant to the setup here. You can reach out to me if yo
 | 4 | SSDT-RHUB.aml | - |
 
 ## Whats not Working?
-These are the hardware i already had before I install macOS. Since i have other methods, i never botherd about buying a new one.
+These are the hardware components I already had before installing macOS. Since I have other methods, I never bothered to buy new ones.
 | # | Name | Hardware | Details |
 | - | - | - | - |
 | 1 | Wi-Fi | TP-Link AC1200 Wireless WiFi PCIe Card | Not supported in Ventura because it uses a Realtek RTL8812AE chipset. |
